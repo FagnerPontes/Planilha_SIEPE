@@ -4,17 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style>
+      * {
+          box-sizing: border-box; /*border e padding incluidos ao tamanho do elemento*/
+          text-decoration: none; /*remover estilos de texto*/
+          margin: 0; /*remover margens padrões*/
+          padding: 0; /*remover afastamentos padrões*/
+          border: 0; /*remover bordas padrões*/
+          font-family: Helvetica, sans-serif; /*estilo de fonte padrão*/
+      }
+      
       body{
         background-color: #222233;
         color: #ffff88;
+        padding: 2rem;
       }
+      
       a{
-        display: block;
+        display: flex;
         width: 20rem;
         height: 2rem;
         border-radius: 50%;
         boder: 2px solid #ffff88;
         background-color: #222233
+        align-items: center;
+        justify-content: center; /*alinhamento vertical central*/
       }
 
       a:hover{
